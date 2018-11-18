@@ -31,7 +31,7 @@ class Grass extends Base {
 
 
     bazmanal() {
-        this.multiply++
+        this.multiply+= 2
         var norVandak = random(this.yntrelVandak(0));
 
         if (this.multiply >= 2 && norVandak) {
@@ -43,11 +43,11 @@ class Grass extends Base {
     }
     mahanal() {
 
-        if (this.energy <= -3) {
+        if (this.energy <= 0) {
 
-            for (var i in maher) {
-                if (maher[i].x == this.x && maher[i].y == this.y) {
-                    maher.splice(i, 1);
+            for (var i in grassArr) {
+                if (grassArr[i].x == this.x && grassArr[i].y == this.y) {
+                    grassArr.splice(i, 1);
                     break;
                 }
 

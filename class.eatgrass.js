@@ -65,7 +65,7 @@ class Xotaker extends Base {
             for (var i in grassArr) {
                 if (grassArr[i].x == this.x && grassArr[i].y == this.y) {
                     grassArr.splice(i, 1);
-                    this.energy+=10
+                    this.energy+=20
                     break;
                 }
             }
@@ -77,7 +77,7 @@ class Xotaker extends Base {
 
     bazmanal() {
 
-        if (this.energy == 5) {
+        if (this.energy == 2) {
 
             this.energy = 2;
             var bazmanaluVandakner = this.yntrelVandak(0);
@@ -92,7 +92,7 @@ class Xotaker extends Base {
         }
     }
     mahanal() {
-        if (this.energy == -150   ) {
+        if (this.energy == -5   ) {
             for (var i in xotakerner) {
                 if (xotakerner[i].x == this.x && xotakerner[i].y == this.y) {
                     xotakerner.splice(i, 1);

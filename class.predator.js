@@ -66,7 +66,7 @@ class gishatich extends Base {
             for (var i in xotakerner) {
                 if (xotakerner[i].x == this.x && xotakerner[i].y == this.y) {
                     xotakerner.splice(i, 1);
-                    this.energy += 7
+                    this.energy += 20
                     break;
                 }
             }
@@ -81,7 +81,7 @@ class gishatich extends Base {
 
         if (this.energy = 5) {
 
-            this.energy = 2;
+            this.energy = 5;
             var bazmanaluVandakner = this.yntrelVandak(0);
             var norVandak = random(bazmanaluVandakner);
             if (norVandak) {
@@ -94,7 +94,7 @@ class gishatich extends Base {
         }
     }
     mahanal() {
-        if (this.energy <= 0) {
+        if (this.energy <= -10) {
             for (var i in gishatichner) {
                 if (gishatichner[i].x == this.x && gishatichner[i].y == this.y) {
                     gishatichner.splice(i, 1);

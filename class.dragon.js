@@ -51,9 +51,9 @@ class vishap extends Base {
             this.y = norVandak[1];
 
 
-            this.energy--;
+            
         }
-
+        this.energy--;
 
     }
     utel() {
@@ -103,7 +103,7 @@ class vishap extends Base {
     bazmanal() {
 
         if (this.energy >= 10) {
-            this.energy = 2;
+            this.energy = 5;
             var bazmanaluVandakner = this.yntrelVandak(0);
             var norVandak = random(bazmanaluVandakner);
             if (norVandak) {
@@ -117,7 +117,7 @@ class vishap extends Base {
     }
 
     mahanal() {
-        if (this.energy <= 2) {
+        if (this.energy <=2) {
             for (var i in vishapner) {
                 if (vishapner[i].x == this.x && vishapner[i].y == this.y) {
                     vishapner.splice(i, 1);

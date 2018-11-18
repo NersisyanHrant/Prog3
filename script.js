@@ -1,4 +1,4 @@
-var side = 20;
+var side = 15;
 var matrix = [];
 var row = 70, column = 70;
 
@@ -53,35 +53,12 @@ function setup() {
 
 
 function draw() {
+        console.log(grassArr.length,xotakerner.length);
+        //console.log(xotakerner.length);
+        //console.log(maher.length);
+  
 
-    for (var y = 0; y < matrix.length; y++) {
-        for (var x = 0; x < matrix[y].length; x++) {
-            if (matrix[y][x] == 0) {
-                fill("#acacac");
-                rect(x * side, y * side, side, side);
-            } else if (matrix[y][x] == 1) {
-                fill("green");
-                rect(x * side, y * side, side, side);
-            } else if (matrix[y][x] == 2) {
-                fill("yellow");
-                rect(x * side, y * side, side, side);
-            } else if (matrix[y][x] == 3) {
-                fill("red");
-                rect(x * side, y * side, side, side);
-            } else if (matrix[y][x] == 4) {
-                fill("blue");
-                rect(x * side, y * side, side, side);
-            }
-            else if (matrix[y][x] == 5) {
-                fill("black");
-                rect(x * side, y * side, side, side);
-            }
-            else if (matrix[y][x] == 6) {
-                fill("#d15830");
-                rect(x * side, y * side, side, side);
-            }
-        }
-    }
+    drawmatrix();
     for (var i in grassArr) {
         grassArr[i].bazmanal();
         grassArr[i].mahanal();
@@ -94,6 +71,7 @@ function draw() {
         xotakerner[i].mahanal();
 
     }
+    /*
     for (var i in gishatichner) {
         gishatichner[i].utel();
         gishatichner[i].bazmanal();
@@ -117,5 +95,147 @@ function draw() {
         arjer[i].bazmanal();
         arjer[i].mahanal();
 
+    }
+    */
+}
+
+function drawmatrix() {
+    var aui = [0, 255];
+    for (var y = 0; y < matrix.length; y++) {
+        for (var x = 0; x < matrix[y].length; x++) {
+            if (frameCount%40>0 && frameCount%40<10 ) {
+               
+                //dzmer
+              
+
+                
+                if (matrix[y][x] == 1) {
+                    fill("green");
+
+                }
+                else if (matrix[y][x] == 0) {
+                    fill("#ffffff");
+
+                }
+                else if (matrix[y][x] == 2) {
+
+                    fill("yellow");
+
+                }
+                else if (matrix[y][x] == 3) {
+                    fill("red");
+                }
+                else if (matrix[y][x] == 3) {
+                    fill("#802b00");
+                }
+
+                else if (matrix[y][x] == 4) {
+                    fill("black");
+                }
+                else if (matrix[y][x] == 5) {
+                    fill("white");
+                }
+                
+
+                rect(x * side, y * side, side, side);
+            }
+            else if (frameCount%40>10 && frameCount%40<20){
+                //garun
+                if (matrix[y][x] == 1) {
+                    fill("green");
+
+                }
+                else if (matrix[y][x] == 0) {
+                    fill("#99ff99");
+
+                }
+                else if (matrix[y][x] == 2) {
+
+                    fill("yellow");
+
+                }
+                else if (matrix[y][x] == 3) {
+                    fill("red");
+                }
+                else if (matrix[y][x] == 6) {
+                    fill("#802b00");
+                }
+
+                else if (matrix[y][x] == 4) {
+                    fill("black");
+                }
+                else if (matrix[y][x] == 2) {
+                    fill("white");
+                }
+
+                rect(x * side, y * side, side, side);
+
+            }
+            else if (frameCount%40>20 && frameCount%40<30){
+                //amar
+                if (matrix[y][x] == 1) {
+                    fill("green");
+
+                }
+                else if (matrix[y][x] == 0) {
+                    fill("#ffff1a");
+
+                }
+                else if (matrix[y][x] == 2) {
+
+                    fill("yellow");
+
+                }
+                else if (matrix[y][x] == 3) {
+                    fill("red");
+                }
+                else if (matrix[y][x] == 6) {
+                    fill("#802b00");
+                }
+
+                else if (matrix[y][x] == 4) {
+                    fill("black");
+                }
+                else if (matrix[y][x] == 5) {
+                    fill("white");
+                }
+
+                rect(x * side, y * side, side, side);
+
+            }
+            else if (frameCount%40>30 && frameCount%40<40){
+
+                //ashun
+                if (matrix[y][x] == 1) {
+                    fill("green");
+
+                }
+                else if (matrix[y][x] == 0) {
+                    fill("#ff9900");
+
+                }
+                else if (matrix[y][x] == 2) {
+
+                    fill("yellow");
+
+                }
+                else if (matrix[y][x] == 3) {
+                    fill("red");
+                }
+                else if (matrix[y][x] == 6) {
+                    fill("#802b00");
+                }
+
+                else if (matrix[y][x] == 4) {
+                    fill("black");
+                }
+                else if (matrix[y][x] == 5) {
+                    fill("white");
+                }
+
+                rect(x * side, y * side, side, side);
+
+            }
+        }
     }
 }

@@ -34,10 +34,13 @@ class mah extends Base {
         ];
 
     }
+
+    /*
     chooseCell(character) {
         this.getNewCoordinates();
         return super.chooseCell(character);
     }
+    */
 
     sharjvel() {
         this.stanalNorKordinatner();
@@ -99,9 +102,9 @@ class mah extends Base {
             matrix[norVandak3[1]][norVandak3[0]] = 5;
             this.x = norVandak3[0];
             this.y = norVandak3[1];
-            for (var i in gishatich) {
-                if (gishatichnerner[i].x == this.x && ner[i].y == this.y) {
-                    vishapner.splice(i, 1);
+            for (var i in gishatichner) {
+                if (gishatichner[i].x == this.x && gishatichner[i].y == this.y) {
+                    gishatichner.splice(i, 1);
                     this.energy++
                     break;
                 }
@@ -133,16 +136,16 @@ class mah extends Base {
 
     bazmanal() {
 
-        if (this.energy >= 10) {
+        if (this.energy >= 40) {
             var norMah = new mah(this.x, this.y);
             maher.push(norMah);
-            this.energy == 5;
+            this.energy == 2;
         }
     }
 
     mahanal() {
 
-        if (this.energy <= 5) {
+        if (this.energy <= 0) {
 
             for (var i in maher) {
                 if (maher[i].x == this.x && maher[i].y == this.y) {

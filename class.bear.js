@@ -74,7 +74,7 @@ class Arj extends Base {
             for (var i in gishatichner) {
                 if (gishatichner[i].x == this.x && gishatichner[i].y == this.y) {
                     gishatichner.splice(i, 1);
-                    this.energy += 17;
+                    this.energy += 20;
                     break;
                 }
             }
@@ -89,7 +89,7 @@ class Arj extends Base {
             for (var i in xotakerner) {
                 if (xotakerner[i].x == this.x && xotakerner[i].y == this.y) {
                     xotakerner.splice(i, 1);
-                    this.energy+= 5
+                    this.energy+= 20;
                     break;
                 }
             }
@@ -110,8 +110,8 @@ class Arj extends Base {
             if (norVandak) {
                 var x = norVandak[0];
                 var y = norVandak[1];
-                var norVishap = new vishap(x, y);
-                vishapner.push(norVishap);
+                var norArj = new Arj(x, y);
+                vishapner.push(norArj);
                 matrix[y][x] = 4;
             }
         }
@@ -119,9 +119,9 @@ class Arj extends Base {
 
     mahanal() {
         if (this.energy <= -5) {
-            for (var i in vishapner) {
-                if (vishapner[i].x == this.x && vishapner[i].y == this.y) {
-                    vishapner.splice(i, 1);
+            for (var i in arjer) {
+                if (arjer[i].x == this.x && arjer[i].y == this.y) {
+                    arjer.splice(i, 1);
                     matrix[this.y][this.x] = 0;
                     break;
                 }
