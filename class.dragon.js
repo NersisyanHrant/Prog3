@@ -79,20 +79,20 @@ class vishap extends Base {
                 }
             }
         }
-        else if (norVandak2) {
-            matrix[this.y][this.x] = 0;
-            matrix[norVandak2[1]][norVandak2[0]] = 4;
-            this.x = norVandak2[0];
-            this.y = norVandak2[1];
+        // else if (norVandak2) {
+        //     matrix[this.y][this.x] = 0;
+        //     matrix[norVandak2[1]][norVandak2[0]] = 4;
+        //     this.x = norVandak2[0];
+        //     this.y = norVandak2[1];
 
-            for (var i in xotakerner) {
-                if (xotakerner[i].x == this.x && xotakerner[i].y == this.y) {
-                    xotakerner.splice(i, 1);
-                    this.energy++
-                    break;
-                }
-            }
-        }
+        //     for (var i in xotakerner) {
+        //         if (xotakerner[i].x == this.x && xotakerner[i].y == this.y) {
+        //             xotakerner.splice(i, 1);
+        //             this.energy++
+        //             break;
+        //         }
+        //     }
+        // }
         else {
             this.sharjvel();
         }

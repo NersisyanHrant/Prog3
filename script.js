@@ -18,7 +18,7 @@ function setup() {
         }
         
     }
-    frameRate(20);
+    frameRate(10);
     createCanvas(matrix[0].length * side, matrix.length * side);
     background('#acacac');
 
@@ -71,7 +71,7 @@ function draw() {
         xotakerner[i].mahanal();
 
     }
-    /*
+    
     for (var i in gishatichner) {
         gishatichner[i].utel();
         gishatichner[i].bazmanal();
@@ -90,13 +90,14 @@ function draw() {
         maher[i].bazmanal();
         maher[i].mahanal();
     }
+    
     for(var i in arjer){
         arjer[i].utel();
         arjer[i].bazmanal();
         arjer[i].mahanal();
 
     }
-    */
+    
 }
 
 function drawmatrix() {
@@ -122,19 +123,19 @@ function drawmatrix() {
                     fill("yellow");
 
                 }
-                else if (matrix[y][x] == 3) {
-                    fill("red");
-                }
-                else if (matrix[y][x] == 3) {
-                    fill("#802b00");
-                }
+                 else if (matrix[y][x] == 3) {
+                     fill("red");
+                 }
+                 else if (matrix[y][x] == 3) {
+                     fill("#802b00");
+                 }
 
-                else if (matrix[y][x] == 4) {
-                    fill("black");
-                }
-                else if (matrix[y][x] == 5) {
-                    fill("white");
-                }
+                 else if (matrix[y][x] == 4) {
+                     fill("black");
+                 }
+                 else if (matrix[y][x] == 5) {
+                     fill("white");
+                 }
                 
 
                 rect(x * side, y * side, side, side);
@@ -154,19 +155,20 @@ function drawmatrix() {
                     fill("yellow");
 
                 }
-                else if (matrix[y][x] == 3) {
-                    fill("red");
-                }
-                else if (matrix[y][x] == 6) {
-                    fill("#802b00");
-                }
+                
+                 else if (matrix[y][x] == 3) {
+                     fill("red");
+                 }
+                 else if (matrix[y][x] == 6) {
+                     fill("#802b00");
+                 }
 
-                else if (matrix[y][x] == 4) {
-                    fill("black");
-                }
-                else if (matrix[y][x] == 2) {
-                    fill("white");
-                }
+                 else if (matrix[y][x] == 4) {
+                     fill("black");
+                 }
+                 else if (matrix[y][x] == 2) {
+                     fill("white");
+                 }
 
                 rect(x * side, y * side, side, side);
 
@@ -186,19 +188,19 @@ function drawmatrix() {
                     fill("yellow");
 
                 }
-                else if (matrix[y][x] == 3) {
-                    fill("red");
-                }
-                else if (matrix[y][x] == 6) {
-                    fill("#802b00");
-                }
+                 else if (matrix[y][x] == 3) {
+                     fill("red");
+                 }
+                 else if (matrix[y][x] == 6) {
+                     fill("#802b00");
+                 }
 
-                else if (matrix[y][x] == 4) {
-                    fill("black");
-                }
-                else if (matrix[y][x] == 5) {
-                    fill("white");
-                }
+                 else if (matrix[y][x] == 4) {
+                     fill("black");
+                 }
+                 else if (matrix[y][x] == 5) {
+                     fill("white");
+                 }
 
                 rect(x * side, y * side, side, side);
 
@@ -219,19 +221,19 @@ function drawmatrix() {
                     fill("yellow");
 
                 }
-                else if (matrix[y][x] == 3) {
-                    fill("red");
-                }
-                else if (matrix[y][x] == 6) {
-                    fill("#802b00");
-                }
+                 else if (matrix[y][x] == 3) {
+                     fill("red");
+                 }
+                 else if (matrix[y][x] == 6) {
+                     fill("#802b00");
+                 }
 
-                else if (matrix[y][x] == 4) {
-                    fill("black");
-                }
-                else if (matrix[y][x] == 5) {
-                    fill("white");
-                }
+                 else if (matrix[y][x] == 4) {
+                     fill("black");
+                 }
+                 else if (matrix[y][x] == 5) {
+                     fill("white");
+                 }
 
                 rect(x * side, y * side, side, side);
 
